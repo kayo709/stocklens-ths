@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: stocklens-research-demo
+    runtime: python
+    plan: free
+    buildCommand: "true"
+    startCommand: python server.py
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PYTHONUNBUFFERED
+        value: "1"

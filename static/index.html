@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1730"><meta name="description" content="证据驱动的个股研究：贵州茅台(600519)多维诊断与可验证依据。"><title>StockLens · 证据驱动的个股研究</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<div class="app-shell">
+ <aside class="sidebar" aria-label="主导航">
+  <a href="#overview" class="brand"><span class="brand-logo"><span class="brand-inner">S</span></span><span>STOCKLENS<small>循证投资研究台</small></span></a>
+  <div class="side-label">WORKSPACE</div>
+  <nav class="nav">
+   <a href="#overview" class="active"><span class="nav-icon">◫</span> 研究总览</a>
+   <a href="#dimensions"><span class="nav-icon">◈</span> 多维透视</a>
+   <a href="#evidence"><span class="nav-icon">▤</span> 证据矩阵</a>
+   <a href="#assistant"><span class="nav-icon">✦</span> 研究助手</a>
+   <a href="#sources"><span class="nav-icon">↗</span> 数据与出处</a>
+  </nav>
+  <div class="sidebar-bottom"><div class="live-dot"></div><div><b>公开公告 · 离线快照</b><small>没有伪装成实时行情</small></div></div>
+ </aside>
+ <div class="page">
+  <header class="topbar"><div class="crumb">研究工作台 <span>/</span> A 股 <span>/</span> <strong>600519</strong></div><div class="topright"><span class="top-chip"><i></i> SOURCE TRACE · 官方公告</span><span class="date-text">证据截至 2026.08.15</span></div></header>
+  <main class="content">
+   <section id="overview" class="hero"><div class="hero-bg"></div><div class="hero-body"><div class="eyebrow">EQUITY RESEARCH / 深度诊断 <span class="eyebrow-rule"></span> REPORT 001</div>
+    <div class="hero-title"><div><div class="company-meta">上证主板 · 600519.SH <span class="hero-tag">白酒 / 酒类制造</span></div><h1>贵州茅台 <span>— 不是评分，是证据</span></h1><p>从经营、利润、现金流到估值与风险，让每个判断都能回到原始字段。</p></div><div class="hero-stamp">DATA<br>OVER<br>OPINION<span>证据优先</span></div></div>
+    <div class="hero-foot"><span>数据源：公司定期报告与重大事项公告</span><span>最新报告：2026 年半年报 <em>未经审计</em></span><span>研究方式：可验证 / 可追问 / 不下交易指令</span></div>
+   </div></section>
+   <div class="notice-bar" id="modeNotice"><span class="notice-icon">i</span><span id="noticeText">正在加载证据快照……</span><label for="modeSelect">异常演示</label><select id="modeSelect" aria-label="异常演示情景"><option value="normal">标准数据</option><option value="missing">模拟字段缺失</option><option value="conflict">模拟来源冲突</option><option value="stale">模拟数据过期</option><option value="offline">模拟接口失败</option></select></div>
+   <div class="section-head"><div><div class="micro-label">01 / PERFORMANCE SNAPSHOT</div><h2>关键财务信号</h2></div><p>2026 年上半年，同比 2025 年上半年 · 原始值可追溯</p></div>
+   <div class="kpis" id="kpis"></div>
+   <section id="dimensions" class="split-section"><div class="left-pane"><div class="section-head"><div><div class="micro-label">02 / INVESTIGATION</div><h2>这家公司，值得继续追问什么？</h2></div></div><div class="interpretation"><div class="interpretation-top"><span class="green-bullet"></span> 多证据联合诊断 <span class="small-inline">非自动投资评级</span></div><div id="interpretationText">正在计算……</div><div class="interpretation-foot"><span>事实 <b>≠</b> 推断 <b>≠</b> 无法验证</span><a href="#evidence">查看全量证据 ↗</a></div></div><div class="lens-title">选择研究视角 <span>点击更新证据焦点</span></div><div class="lens-list" id="lensList"></div></div>
+    <div class="right-pane"><div class="section-head right-head"><div><div class="micro-label">03 / COMPARATIVE DATA</div><h2>看清时间口径</h2></div></div><div class="comparison"><div class="tab-row" role="tablist"><button class="tab active" data-period="h1" role="tab" aria-selected="true">半年同期</button><button class="tab" data-period="fy" role="tab" aria-selected="false">完整年度</button></div><div id="chartData"></div><div class="chart-note">* 图表按同口径期次对比；不同指标独立缩放，不跨年度 / 半年度混比。所有数值单位为亿元。</div></div><div class="pe-box"><div class="pe-title"> <span>∑</span><div><strong>估值情景实验室</strong><small>你输入的是假设股价，不是实时行情</small></div></div><div class="pe-input-row"><label for="pePrice">假设每股价格（元）</label><input id="pePrice" inputmode="decimal" type="number" min="0.01" step="0.01" placeholder="输入假设价格"><button id="peBtn">计算 PE</button></div><div id="peResult" class="pe-result">真实估值：待验证。2025 全年 EPS 已有原始公告。</div></div></div>
+   </section>
+   <section id="evidence" class="evidence-section"><div class="section-head"><div><div class="micro-label">04 / EVIDENCE MATRIX</div><h2>证据矩阵 <span id="evidenceCount" class="count-token">—</span></h2></div><p>点开任意卡片，追溯原始数字、期次、公式与公告链接</p></div><div class="evidence-toolbar"><div class="filter-pills" id="filterPills"></div><input id="filterSearch" aria-label="搜索证据" placeholder="搜索结论或字段…"></div><div class="evidence-grid" id="evidenceList"></div><div id="noEvidence" class="empty hidden">没有匹配证据。请调整过滤条件。</div></section>
+   <section id="assistant" class="assistant-section"><div class="assistant-column"><div class="micro-label">05 / RESEARCH COPILOT</div><h2>提出一个研究问题<span>✦</span></h2><p>不是让 AI 给你一句“值得买”，而是让它替你定位该看的证据，再由确定性引擎给出数字和出处。</p><div class="sample-prompts" id="prompts"><button>收入增长，为什么利润下降？</button><button>现金流暴涨是否代表卖得更好？</button><button>这家公司估值便宜吗？</button><button>近期公告对经营有什么影响？</button></div><form id="askForm" class="ask-box"><label for="question" class="sr-only">输入研究问题</label><textarea id="question" rows="3" maxlength="500" placeholder="例如：2026上半年茅台的经营质量到底怎么样？"></textarea><div class="ask-actions"><span>仅调用已登记的证据 ID · 不预测股价</span><button type="submit" id="askBtn">循证分析 <span>↗</span></button></div></form></div><div class="assistant-output"><div class="assistant-top"><span class="ai-mark">✦</span><b>Evidence Copilot</b><span id="aiMode">规则路由 / 可选 LLM</span></div><div id="askAnswer"><div class="hint-graphic">✳</div><h3>每个答案都带着证据来</h3><p>从左侧选择一个问题，结果将直接关联原始字段和披露来源。</p></div></div></section>
+   <section id="sources" class="sources-section"><div class="section-head"><div><div class="micro-label">06 / SOURCE REGISTRY</div><h2>数据从哪里来</h2></div><p>透明声明覆盖范围、可靠性与无法验证的部分</p></div><div class="source-grid" id="sourceList"></div><div class="boundaries"><div><span class="boundary-icon">!</span><strong>我们没有做的事</strong><p>没有接入实时 K 线与同业样本；没有把管理层观点当成行业统计事实；没有将商品售价当证券行情；没有用 2026 年半年数据假装全年；没有生成任何买入、卖出或收益预测。</p></div><div><span class="boundary-icon">✓</span><strong>可复核的确定性计算</strong><p>同比、毛利率、资产负债相关增幅均由服务器按原始“元”级字段以 Decimal 计算；显示到亿元保留两位，计算不使用展示值反推。</p></div></div></section>
+   <footer class="footer"><span>STOCKLENS / V1.2 · PUBLIC-FILING RESEARCH DEMO</span><span>研究用途 · 不构成投资建议 · 2026-10</span></footer>
+  </main>
+ </div>
+</div>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-label="证据详情"><div class="modal-backdrop" id="modalBackdrop"></div><div class="modal-panel"><div class="modal-head"><span id="modalCode">EVIDENCE</span><button id="modalClose" aria-label="关闭证据详情">✕</button></div><div id="modalBody"></div></div></div>
+<script src="/app.js" defer></script>
+</body></html>

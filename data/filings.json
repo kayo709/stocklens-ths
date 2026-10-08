@@ -1,0 +1,323 @@
+{
+  "company": {
+    "name": "贵州茅台",
+    "ticker": "600519",
+    "exchange": "上交所主板",
+    "sector": "白酒 / 酒类制造",
+    "as_of": "2026-08-15",
+    "data_cutoff": "2026-08-15",
+    "snapshot_type": "公开公告离线快照",
+    "audit_notice": "2026 年半年度报告未经审计"
+  },
+  "sources": {
+    "H26": {
+      "title": "贵州茅台 2026 年半年度报告",
+      "published": "2026-08-15",
+      "period": "2026-01-01 至 2026-06-30",
+      "publisher": "公司公告 / 巨潮资讯",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-15/1225475868.PDF",
+      "type": "公司披露",
+      "quality": "原始公告"
+    },
+    "FY25": {
+      "title": "贵州茅台 2025 年年度报告摘要",
+      "published": "2026-04-17",
+      "period": "2025-01-01 至 2025-12-31",
+      "publisher": "贵州茅台官网",
+      "url": "https://www.moutai.com.cn/mtgf/articleFileDir/2026-04/17/2c718d1ccb3d4ff986db336b10cc7ed6.pdf",
+      "type": "公司披露",
+      "quality": "原始公告"
+    },
+    "EVENT26": {
+      "title": "贵州茅台重大事项公告（临 2026-028）",
+      "published": "2026-07-18",
+      "period": "自 2026-07-18 00:00 起",
+      "publisher": "公司公告 / 巨潮资讯",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-07-18/1225431263.PDF",
+      "type": "公司披露",
+      "quality": "原始公告"
+    }
+  },
+  "fields": {
+    "h26_revenue": {
+      "label": "营业收入",
+      "raw": "90703260964.48",
+      "unit": "元",
+      "period": "2026H1",
+      "source": "H26",
+      "page": "第 5 页",
+      "location": "第二节 / 主要会计数据",
+      "scope": "合并口径（不等于营业总收入）"
+    },
+    "h25_revenue": {
+      "label": "营业收入",
+      "raw": "89389354416.84",
+      "unit": "元",
+      "period": "2025H1",
+      "source": "H26",
+      "page": "第 5 页",
+      "location": "第二节 / 上年同期",
+      "scope": "合并口径"
+    },
+    "h26_cost": {
+      "label": "营业成本",
+      "raw": "9473762565.88",
+      "unit": "元",
+      "period": "2026H1",
+      "source": "H26",
+      "page": "第 7 页",
+      "location": "第三节 / 财务报表相关科目变动",
+      "scope": "合并口径"
+    },
+    "h25_cost": {
+      "label": "营业成本",
+      "raw": "7777491083.93",
+      "unit": "元",
+      "period": "2025H1",
+      "source": "H26",
+      "page": "第 7 页",
+      "location": "第三节 / 上年同期",
+      "scope": "合并口径"
+    },
+    "h26_profit": {
+      "label": "归属于上市公司股东的净利润",
+      "raw": "44516880421.86",
+      "unit": "元",
+      "period": "2026H1",
+      "source": "H26",
+      "page": "第 5 页",
+      "location": "第二节 / 主要会计数据",
+      "scope": "归母净利润"
+    },
+    "h25_profit": {
+      "label": "归属于上市公司股东的净利润",
+      "raw": "45402962298.10",
+      "unit": "元",
+      "period": "2025H1",
+      "source": "H26",
+      "page": "第 5 页",
+      "location": "第二节 / 上年同期",
+      "scope": "归母净利润"
+    },
+    "h26_cfo": {
+      "label": "经营活动产生的现金流量净额",
+      "raw": "70690750119.06",
+      "unit": "元",
+      "period": "2026H1",
+      "source": "H26",
+      "page": "第 5 页",
+      "location": "第二节 / 主要会计数据",
+      "scope": "合并报表，含集团财务公司业务"
+    },
+    "h25_cfo": {
+      "label": "经营活动产生的现金流量净额",
+      "raw": "13119061031.33",
+      "unit": "元",
+      "period": "2025H1",
+      "source": "H26",
+      "page": "第 5 页",
+      "location": "第二节 / 上年同期",
+      "scope": "合并报表，含集团财务公司业务"
+    },
+    "h26_roe": {
+      "label": "加权平均净资产收益率",
+      "raw": "16.75",
+      "unit": "%",
+      "period": "2026H1",
+      "source": "H26",
+      "page": "第 5 页",
+      "location": "第二节 / 主要财务指标",
+      "scope": "报告期累计、非年化"
+    },
+    "h25_roe": {
+      "label": "加权平均净资产收益率",
+      "raw": "17.89",
+      "unit": "%",
+      "period": "2025H1",
+      "source": "H26",
+      "page": "第 5 页",
+      "location": "第二节 / 上年同期",
+      "scope": "报告期累计、非年化"
+    },
+    "h26_contract": {
+      "label": "合同负债",
+      "raw": "3177561597.07",
+      "unit": "元",
+      "period": "2026-06-30",
+      "source": "H26",
+      "page": "第 9 页",
+      "location": "第三节 / 资产及负债状况",
+      "scope": "期末余额"
+    },
+    "fy25_contract": {
+      "label": "合同负债",
+      "raw": "8006739780.94",
+      "unit": "元",
+      "period": "2025-12-31",
+      "source": "H26",
+      "page": "第 9 页",
+      "location": "第三节 / 上年期末余额",
+      "scope": "期末余额"
+    },
+    "fy25_revenue": {
+      "label": "营业收入",
+      "raw": "168838102514.79",
+      "unit": "元",
+      "period": "2025FY",
+      "source": "FY25",
+      "page": "第 4 页",
+      "location": "3.1 / 近三年主要会计数据",
+      "scope": "合并口径"
+    },
+    "fy24_revenue": {
+      "label": "营业收入",
+      "raw": "170899152276.34",
+      "unit": "元",
+      "period": "2024FY",
+      "source": "FY25",
+      "page": "第 4 页",
+      "location": "3.1 / 近三年主要会计数据",
+      "scope": "合并口径"
+    },
+    "fy25_profit": {
+      "label": "归属于上市公司股东的净利润",
+      "raw": "82320067101.68",
+      "unit": "元",
+      "period": "2025FY",
+      "source": "FY25",
+      "page": "第 4 页",
+      "location": "3.1 / 近三年主要会计数据",
+      "scope": "归母净利润"
+    },
+    "fy24_profit": {
+      "label": "归属于上市公司股东的净利润",
+      "raw": "86228146421.62",
+      "unit": "元",
+      "period": "2024FY",
+      "source": "FY25",
+      "page": "第 4 页",
+      "location": "3.1 / 近三年主要会计数据",
+      "scope": "归母净利润"
+    },
+    "fy25_cfo": {
+      "label": "经营活动产生的现金流量净额",
+      "raw": "61522204989.35",
+      "unit": "元",
+      "period": "2025FY",
+      "source": "FY25",
+      "page": "第 4 页",
+      "location": "3.1 / 近三年主要会计数据",
+      "scope": "合并报表"
+    },
+    "fy24_cfo": {
+      "label": "经营活动产生的现金流量净额",
+      "raw": "92463692168.43",
+      "unit": "元",
+      "period": "2024FY",
+      "source": "FY25",
+      "page": "第 4 页",
+      "location": "3.1 / 近三年主要会计数据",
+      "scope": "合并报表"
+    },
+    "fy25_eps": {
+      "label": "基本每股收益",
+      "raw": "65.66",
+      "unit": "元/股",
+      "period": "2025FY",
+      "source": "FY25",
+      "page": "第 4 页",
+      "location": "3.1 / 近三年主要会计数据",
+      "scope": "报告披露，使用期内加权平均股本"
+    },
+    "fy24_eps": {
+      "label": "基本每股收益",
+      "raw": "68.64",
+      "unit": "元/股",
+      "period": "2024FY",
+      "source": "FY25",
+      "page": "第 4 页",
+      "location": "3.1 / 近三年主要会计数据",
+      "scope": "报告披露"
+    },
+    "fy25_roe": {
+      "label": "加权平均净资产收益率",
+      "raw": "32.53",
+      "unit": "%",
+      "period": "2025FY",
+      "source": "FY25",
+      "page": "第 4 页",
+      "location": "3.1 / 近三年主要会计数据",
+      "scope": "年度"
+    },
+    "fy24_roe": {
+      "label": "加权平均净资产收益率",
+      "raw": "36.02",
+      "unit": "%",
+      "period": "2024FY",
+      "source": "FY25",
+      "page": "第 4 页",
+      "location": "3.1 / 近三年主要会计数据",
+      "scope": "年度"
+    },
+    "event_retail_old": {
+      "label": "i茅台指定商品旧零售价",
+      "raw": "1539",
+      "unit": "元/瓶",
+      "period": "调整前",
+      "source": "EVENT26",
+      "page": "第 1 页",
+      "location": "临2026-028 / 正文",
+      "scope": "飞天53%vol 500ml贵州茅台酒（2026），非股票价格"
+    },
+    "event_retail_new": {
+      "label": "i茅台指定商品新零售价",
+      "raw": "1639",
+      "unit": "元/瓶",
+      "period": "自2026-07-18起",
+      "source": "EVENT26",
+      "page": "第 1 页",
+      "location": "临2026-028 / 正文",
+      "scope": "飞天53%vol 500ml贵州茅台酒（2026），非股票价格"
+    },
+    "event_contract_old": {
+      "label": "指定商品旧销售合同价",
+      "raw": "1269",
+      "unit": "元/瓶",
+      "period": "调整前",
+      "source": "EVENT26",
+      "page": "第 1 页",
+      "location": "临2026-028 / 正文",
+      "scope": "飞天53%vol 500ml贵州茅台酒（2026），非股票价格"
+    },
+    "event_contract_new": {
+      "label": "指定商品新销售合同价",
+      "raw": "1369",
+      "unit": "元/瓶",
+      "period": "自2026-07-18起",
+      "source": "EVENT26",
+      "page": "第 1 页",
+      "location": "临2026-028 / 正文",
+      "scope": "飞天53%vol 500ml贵州茅台酒（2026），非股票价格"
+    },
+    "buyback_shares": {
+      "label": "截至2026-06-30已回购并注销股份",
+      "raw": "2188614",
+      "unit": "股",
+      "period": "截至2026-06-30",
+      "source": "H26",
+      "page": "第 102 页",
+      "location": "第七节财务报告 / 其他重要事项 / 回购公司股份事项",
+      "scope": "报告披露的累计股数（截至资产负债表日）"
+    },
+    "buyback_amount": {
+      "label": "截至2026-06-30回购累计支付金额",
+      "raw": "2999933749.57",
+      "unit": "元",
+      "period": "截至2026-06-30",
+      "source": "H26",
+      "page": "第 102 页",
+      "location": "第七节财务报告 / 其他重要事项 / 回购公司股份事项",
+      "scope": "不含交易费用"
+    }
+  }
+}

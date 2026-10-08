@@ -1,0 +1,1 @@
+PASS: Chromium desktop/mobile, 4 KPI, 14 cards, anchored evidence, paraphrase flag, outage guard, structured Q&A, PE, no JS errors

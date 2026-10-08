@@ -1,0 +1,46 @@
+import sys, json, pathlib, urllib.parse
+sys.path.insert(0,'/mnt/data/stocklens_final_v2')
+from diagnostic import build_diagnosis, route_query,scenario_pe
+from playwright.sync_api import sync_playwright
+root=pathlib.Path('/mnt/data/stocklens_final_v2/static')
+html=(root/'index.html').read_text().replace('<link rel="stylesheet" href="/style.css">','').replace('<script src="/app.js" defer></script>','')
+def mock_api(source, path, body):
+ u=urllib.parse.urlparse(path)
+ if u.path=='/api/health': return {'ok':True,'ai_mode':'离线路由，未接入 LLM'}
+ if u.path=='/api/diagnosis': return build_diagnosis(urllib.parse.parse_qs(u.query).get('mode',['normal'])[0])
+ if u.path=='/api/ask':
+  q=json.loads(body or '{}');return route_query(q['question'],q.get('mode','normal'))
+ if u.path=='/api/pe': return scenario_pe(json.loads(body or '{}').get('price'))
+ return {'error':'not found'}
+with sync_playwright() as p:
+ b=p.chromium.launch(headless=True, executable_path='/usr/bin/chromium',args=['--no-sandbox','--disable-dev-shm-usage'])
+ page=b.new_page(viewport={'width':1440,'height':920},device_scale_factor=1)
+ page.expose_binding('__apiMock',mock_api)
+ page.set_content(html,wait_until='domcontentloaded',timeout=10000)
+ page.add_style_tag(content=(root/'style.css').read_text())
+ page.evaluate("""window.fetch = async (url,opts={}) => {let j=await window.__apiMock(url,opts.body || '');return new Response(JSON.stringify(j),{status:200,headers:{'Content-Type':'application/json'}})}""")
+ errors=[];page.on('pageerror',lambda e: errors.append(str(e)))
+ page.add_script_tag(content=(root/'app.js').read_text())
+ page.wait_for_selector('.kpis .kpi',timeout=5000)
+ print('TITLE:',page.title())
+ print('KPI:',page.locator('.kpi').count())
+ print('EVIDENCE:',page.locator('.evidence-card').count())
+ page.screenshot(path='/mnt/data/stocklens_final_v2/docs/UI_PREVIEW.png',full_page=True)
+ page.locator('.kpi').first.click()
+ print('MODAL:',page.locator('#modal').is_visible())
+ page.locator('#modalClose').click()
+ page.locator('#modeSelect').select_option('conflict')
+ page.wait_for_function("document.querySelectorAll('.kpi-muted').length > 0",timeout=5000)
+ print('CONFLICT:',page.locator('.kpi-muted').count())
+ page.locator('#modeSelect').select_option('normal')
+ page.wait_for_function("document.querySelectorAll('.kpi-muted').length === 0",timeout=5000)
+ page.locator('#prompts button').first.click()
+ page.wait_for_selector('#askAnswer .answer-item',timeout=5000)
+ print('ANSWERS:',page.locator('#askAnswer .answer-item').count())
+ page.locator('#pePrice').fill('1500')
+ page.locator('#peBtn').click()
+ page.wait_for_function("document.querySelector('#peResult').textContent.includes('倍')",timeout=5000)
+ print('SCENARIO PE:',page.locator('#peResult').inner_text()[:65].replace('\n',' '))
+ print('PAGE ERRORS:',errors)
+ print('RESULT:','PASS' if not errors else 'FAIL')
+ b.close()

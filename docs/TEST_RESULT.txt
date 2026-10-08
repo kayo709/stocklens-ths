@@ -1,0 +1,64 @@
+test_2026_h1_is_unaudited (test_diagnostic.FinancialEngineTests.test_2026_h1_is_unaudited) ... ok
+test_annual_2025_changes (test_diagnostic.FinancialEngineTests.test_annual_2025_changes) ... ok
+test_answer_never_reuses_blocked_number (test_diagnostic.FinancialEngineTests.test_answer_never_reuses_blocked_number) ... ok
+test_cfo_increase_and_source_caveat (test_diagnostic.FinancialEngineTests.test_cfo_increase_and_source_caveat) ... ok
+test_conflict_blocks_revenue_and_derived_margin (test_diagnostic.FinancialEngineTests.test_conflict_blocks_revenue_and_derived_margin) ... ok
+test_contract_liability_balance_not_same_period_yoy (test_diagnostic.FinancialEngineTests.test_contract_liability_balance_not_same_period_yoy) ... ok
+test_cost_change_reconciles_with_report (test_diagnostic.FinancialEngineTests.test_cost_change_reconciles_with_report) ... ok
+test_every_numeric_field_has_provenance (test_diagnostic.FinancialEngineTests.test_every_numeric_field_has_provenance) ... ok
+test_evidence_ids_and_fields_are_valid (test_diagnostic.FinancialEngineTests.test_evidence_ids_and_fields_are_valid) ... ok
+test_exact_h1_reported_raw_values (test_diagnostic.FinancialEngineTests.test_exact_h1_reported_raw_values) ... ok
+test_injection_never_produces_buy_sell_advice (test_diagnostic.FinancialEngineTests.test_injection_never_produces_buy_sell_advice) ... ok
+test_invalid_prices_fail_closed (test_diagnostic.FinancialEngineTests.test_invalid_prices_fail_closed) ... ok
+test_llm_route_rejects_unregistered_ids (test_diagnostic.FinancialEngineTests.test_llm_route_rejects_unregistered_ids) ... ok
+test_margin_exact_decimal_arithmetic (test_diagnostic.FinancialEngineTests.test_margin_exact_decimal_arithmetic) ... ok
+test_missing_blocks_only_affected_metrics (test_diagnostic.FinancialEngineTests.test_missing_blocks_only_affected_metrics) ... ok
+test_missing_denominator_margin (test_diagnostic.FinancialEngineTests.test_missing_denominator_margin) ... ok
+test_offline_preserves_independent_annual_data (test_diagnostic.FinancialEngineTests.test_offline_preserves_independent_annual_data) ... ok
+test_pe_is_never_fake_market_quote (test_diagnostic.FinancialEngineTests.test_pe_is_never_fake_market_quote) ... ok
+test_query_limits (test_diagnostic.FinancialEngineTests.test_query_limits) ... ok
+test_question_provides_answer_not_only_navigation (test_diagnostic.FinancialEngineTests.test_question_provides_answer_not_only_navigation) ... ok
+test_revenue_and_profit_direction (test_diagnostic.FinancialEngineTests.test_revenue_and_profit_direction) ... ok
+test_roe_changes_are_percentage_points (test_diagnostic.FinancialEngineTests.test_roe_changes_are_percentage_points) ... ok
+test_single_missing_field_does_not_invalidate_unrelated_text (test_diagnostic.FinancialEngineTests.test_single_missing_field_does_not_invalidate_unrelated_text) ... ok
+test_stale_marks_every_half_year_metric_invalid (test_diagnostic.FinancialEngineTests.test_stale_marks_every_half_year_metric_invalid) ... ok
+test_text_evidence_blocked_on_source_failure (test_diagnostic.FinancialEngineTests.test_text_evidence_blocked_on_source_failure) ... ok
+test_unknown_scenario_rejected (test_diagnostic.FinancialEngineTests.test_unknown_scenario_rejected) ... ok
+test_zero_denominator (test_diagnostic.FinancialEngineTests.test_zero_denominator) ... ok
+test_dedup_untrusted_llm_ids_and_cannot_insert_extra_sources (test_diagnostic.ProductUpgradeTests.test_dedup_untrusted_llm_ids_and_cannot_insert_extra_sources) ... ok
+test_followups_are_cited_by_evidence (test_diagnostic.ProductUpgradeTests.test_followups_are_cited_by_evidence) ... ok
+test_full_report_offline_blocks_explanation_and_buyback (test_diagnostic.ProductUpgradeTests.test_full_report_offline_blocks_explanation_and_buyback) ... ok
+test_question_can_combine_growth_and_profit (test_diagnostic.ProductUpgradeTests.test_question_can_combine_growth_and_profit) ... ok
+test_repurchase_question_does_not_mix_commodity_price_event (test_diagnostic.ProductUpgradeTests.test_repurchase_question_does_not_mix_commodity_price_event) ... ok
+test_repurchase_source_offline_blocks_event (test_diagnostic.ProductUpgradeTests.test_repurchase_source_offline_blocks_event) ... ok
+test_source_matched_repurchase_is_real_reported_figure (test_diagnostic.ProductUpgradeTests.test_source_matched_repurchase_is_real_reported_figure) ... ok
+test_structured_answer_invalidates_missing_cashflow (test_diagnostic.ProductUpgradeTests.test_structured_answer_invalidates_missing_cashflow) ... ok
+test_text_excerpt_is_truthful_summary_not_verbatim_quote (test_diagnostic.ProductUpgradeTests.test_text_excerpt_is_truthful_summary_not_verbatim_quote) ... ok
+test_unknown_not_presented_as_tradable_advice (test_diagnostic.ProductUpgradeTests.test_unknown_not_presented_as_tradable_advice) ... ok
+test_unrecognized_question_returns_fallback_without_hallucination (test_diagnostic.ProductUpgradeTests.test_unrecognized_question_returns_fallback_without_hallucination) ... ok
+test_api_ask (test_http.HttpIntegrationTests.test_api_ask) ... 127.0.0.1 - - [08/Oct/2026 03:15:26] "POST /api/ask HTTP/1.1" 200 -
+ok
+test_api_diagnosis (test_http.HttpIntegrationTests.test_api_diagnosis) ... 127.0.0.1 - - [08/Oct/2026 03:15:26] "GET /api/diagnosis HTTP/1.1" 200 -
+ok
+test_api_health (test_http.HttpIntegrationTests.test_api_health) ... 127.0.0.1 - - [08/Oct/2026 03:15:26] "GET /api/health HTTP/1.1" 200 -
+ok
+test_api_pe (test_http.HttpIntegrationTests.test_api_pe) ... 127.0.0.1 - - [08/Oct/2026 03:15:26] "POST /api/pe HTTP/1.1" 200 -
+ok
+test_home_page_servable (test_http.HttpIntegrationTests.test_home_page_servable) ... 127.0.0.1 - - [08/Oct/2026 03:15:26] "GET / HTTP/1.1" 200 -
+ok
+test_invalid_scenario_http_400 (test_http.HttpIntegrationTests.test_invalid_scenario_http_400) ... 127.0.0.1 - - [08/Oct/2026 03:15:26] "GET /api/diagnosis?mode=oops HTTP/1.1" 400 -
+ok
+test_oversized_request_413 (test_http.HttpIntegrationTests.test_oversized_request_413) ... 127.0.0.1 - - [08/Oct/2026 03:15:26] "POST /api/ask HTTP/1.1" 413 -
+ok
+test_source_failure_simulation (test_http.HttpIntegrationTests.test_source_failure_simulation) ... 127.0.0.1 - - [08/Oct/2026 03:15:26] "GET /api/diagnosis?mode=offline HTTP/1.1" 200 -
+ok
+test_http_ask_structure_has_traced_clauses (test_http.RoutingLLMTests.test_http_ask_structure_has_traced_clauses) ... 127.0.0.1 - - [08/Oct/2026 03:15:26] "POST /api/ask HTTP/1.1" 200 -
+ok
+test_router_rejects_hallucinated_id (test_http.RoutingLLMTests.test_router_rejects_hallucinated_id) ... ok
+test_router_with_mocked_valid_llm_response (test_http.RoutingLLMTests.test_router_with_mocked_valid_llm_response) ... ok
+test_router_without_key_does_not_network (test_http.RoutingLLMTests.test_router_without_key_does_not_network) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 1.048s
+
+OK
